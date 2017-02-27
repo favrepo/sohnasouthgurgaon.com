@@ -1,0 +1,11 @@
+
+
+/* Color theme for change template base color */
+
+
+.navbar, .btn-primary , footer {background-color: #CD8439 !important;}
+.btn-primary{border-color: #AD6A26 !important;}
+.navbar-brand > img,.form-control:focus{border-color: #9E5C18 !important;}
+.btn-primary:hover{background-color: #9E5C18 !important;}
+.btn-warning{background-color: #ff6f05;}
+.btn-warning:hover{background-color: #ee6a09;border: 1px solid #ee6a09;} 

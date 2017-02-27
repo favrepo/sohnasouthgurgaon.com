@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} ^sohnasouthgurgaon\.com$
+RewriteRule ^(.*) http://www.sohnasouthgurgaon.com/$1 [R=301]
+RewriteRule ^(.*)index\.(php?)$ /$1 [R=301,NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^ http://www.sohnasouthgurgaon.com/index.php [L,R]

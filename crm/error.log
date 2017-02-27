@@ -1,0 +1,130 @@
+2014-02-22 14:14:05 - ERROR --> Error 2wsdl error: Getting http://favista.com/favista/service/v4/soap.php?wsdl - HTTP ERROR: Unsupported HTTP response status 404 Not Found (soapclient->response has contents of the response) found 2014-02-22 14:14:04.323177 nusoap_client: ctor wsdl=1 timeout=0 response_timeout=30
+endpoint=<pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'http://favista.com/favista/service/v4/soap.php?wsdl'</font> <i>(length=51)</i>
+</pre>2014-02-22 14:14:04.323265 nusoap_client: will use lazy evaluation of wsdl from http://favista.com/favista/service/v4/soap.php?wsdl
+2014-02-22 14:14:04.323329 nusoap_client: call: operation=login, namespace=http://tempuri.org, soapAction=, rpcParams=, style=rpc, use=encoded, endpointType=wsdl
+params=<pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=2)</i>
+  'user_auth' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=3)</i>
+      'user_name' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'website@favista.in'</font> <i>(length=18)</i>
+      'password' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'5710d805283438bba1e4093c7b5719a1'</font> <i>(length=32)</i>
+      'version' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'.01'</font> <i>(length=3)</i>
+  'application_name' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'SoapTest'</font> <i>(length=8)</i>
+</pre>headers=<pre class='xdebug-var-dump' dir='ltr'><small>boolean</small> <font color='#75507b'>false</font>
+</pre>2014-02-22 14:14:04.323432 nusoap_client: instantiating wsdl class with doc: http://favista.com/favista/service/v4/soap.php?wsdl
+2014-02-22 14:14:04.323498 wsdl: ctor wsdl= timeout=0 response_timeout=30
+2014-02-22 14:14:04.323568 wsdl: parse and process WSDL path=
+2014-02-22 14:14:04.323621 wsdl: setCredentials username= authtype= certRequest=
+<pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre>2014-02-22 14:14:04.323672 wsdl: parse and process WSDL path=http://favista.com/favista/service/v4/soap.php?wsdl
+2014-02-22 14:14:04.323705 wsdl: parse WSDL at path=http://favista.com/favista/service/v4/soap.php?wsdl
+2014-02-22 14:14:04.323741 wsdl: getting WSDL http(s) URL http://favista.com/favista/service/v4/soap.php?wsdl
+2014-02-22 14:14:04.323797 soap_transport_http: ctor url=http://favista.com/favista/service/v4/soap.php?wsdl use_curl= curl_options:
+<pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre>2014-02-22 14:14:04.323853 soap_transport_http: parsed URL scheme = http
+2014-02-22 14:14:04.323886 soap_transport_http: parsed URL host = favista.com
+2014-02-22 14:14:04.323915 soap_transport_http: parsed URL path = /favista/service/v4/soap.php
+2014-02-22 14:14:04.323944 soap_transport_http: parsed URL query = wsdl
+2014-02-22 14:14:04.323986 soap_transport_http: set header Host: favista.com
+2014-02-22 14:14:04.324033 soap_transport_http: set header User-Agent: NuSOAP/0.9.5 (1.123)
+2014-02-22 14:14:04.324072 soap_transport_http: set header Accept-Encoding: gzip, deflate
+2014-02-22 14:14:04.324101 soap_transport_http: set header Connection: close
+2014-02-22 14:14:04.324134 soap_transport_http: entered send() with data of length: 0
+2014-02-22 14:14:04.324170 soap_transport_http: connect connection_timeout 0, response_timeout 30, scheme http, host favista.com, port 80
+2014-02-22 14:14:04.324214 soap_transport_http: calling fsockopen with host favista.com connection_timeout 0
+2014-02-22 14:14:04.397889 soap_transport_http: set response timeout to 30
+2014-02-22 14:14:04.397954 soap_transport_http: socket connected
+2014-02-22 14:14:04.398011 soap_transport_http: HTTP request: GET /favista/service/v4/soap.php?wsdl HTTP/1.1
+2014-02-22 14:14:04.398042 soap_transport_http: HTTP header: Host: favista.com
+2014-02-22 14:14:04.398070 soap_transport_http: HTTP header: User-Agent: NuSOAP/0.9.5 (1.123)
+2014-02-22 14:14:04.398097 soap_transport_http: HTTP header: Accept-Encoding: gzip, deflate
+2014-02-22 14:14:04.398124 soap_transport_http: HTTP header: Connection: close
+2014-02-22 14:14:04.398254 soap_transport_http: wrote data to socket, length = 154
+2014-02-22 14:14:04.474987 soap_transport_http: read line of 32 bytes: HTTP/1.1 301 Moved Permanently
+2014-02-22 14:14:04.475216 soap_transport_http: read line of 32 bytes: Server: Apache/2.2.22 (Ubuntu)
+2014-02-22 14:14:04.475397 soap_transport_http: read line of 67 bytes: Location: http://www.favista.com/favista/service/v4/soap.php?wsdl
+2014-02-22 14:14:04.475877 soap_transport_http: read line of 23 bytes: Vary: Accept-Encoding
+2014-02-22 14:14:04.476169 soap_transport_http: read line of 24 bytes: Content-Encoding: gzip
+2014-02-22 14:14:04.476399 soap_transport_http: read line of 45 bytes: Content-Type: text/html; charset=iso-8859-1
+2014-02-22 14:14:04.476642 soap_transport_http: read line of 32 bytes: X-Forwarded-For: 115.254.78.74
+2014-02-22 14:14:04.476846 soap_transport_http: read line of 52 bytes: Cache-Control: private, max-age=0, must-revalidate
+2014-02-22 14:14:04.476984 soap_transport_http: read line of 18 bytes: Pragma: no-cache
+2014-02-22 14:14:04.477119 soap_transport_http: read line of 39 bytes: X-Cacheable: Remove cookies and cache
+2014-02-22 14:14:04.477251 soap_transport_http: read line of 21 bytes: Content-Length: 276
+2014-02-22 14:14:04.477393 soap_transport_http: read line of 22 bytes: Accept-Ranges: bytes
+2014-02-22 14:14:04.477549 soap_transport_http: read line of 37 bytes: Date: Sat, 22 Feb 2014 14:15:03 GMT
+2014-02-22 14:14:04.477708 soap_transport_http: read line of 23 bytes: X-Varnish: 2140593299
+2014-02-22 14:14:04.477868 soap_transport_http: read line of 8 bytes: Age: 0
+2014-02-22 14:14:04.478029 soap_transport_http: read line of 18 bytes: Via: 1.1 varnish
+2014-02-22 14:14:04.478162 soap_transport_http: read line of 19 bytes: Connection: close
+2014-02-22 14:14:04.478291 soap_transport_http: read line of 26 bytes: X-Cache-Backend: default
+2014-02-22 14:14:04.478420 soap_transport_http: read line of 15 bytes: X-Cache: MISS
+2014-02-22 14:14:04.478568 soap_transport_http: read line of 2 bytes: 
+2014-02-22 14:14:04.478706 soap_transport_http: found end of headers after length 555
+2014-02-22 14:14:04.479389 soap_transport_http: want to read content of length 276
+2014-02-22 14:14:04.479546 soap_transport_http: read buffer of 276 bytes
+2014-02-22 14:14:04.479709 soap_transport_http: read to EOF
+2014-02-22 14:14:04.479813 soap_transport_http: read body of length 276
+2014-02-22 14:14:04.479915 soap_transport_http: received a total of 831 bytes of data from server
+2014-02-22 14:14:04.480359 soap_transport_http: closed socket
+2014-02-22 14:14:04.480532 soap_transport_http: Got 301 Moved Permanently with Location: http://www.favista.com/favista/service/v4/soap.php?wsdl
+2014-02-22 14:14:04.480678 soap_transport_http: parsed URL scheme = http
+2014-02-22 14:14:04.480787 soap_transport_http: parsed URL host = www.favista.com
+2014-02-22 14:14:04.480891 soap_transport_http: parsed URL path = /favista/service/v4/soap.php
+2014-02-22 14:14:04.480992 soap_transport_http: parsed URL query = wsdl
+2014-02-22 14:14:04.481125 soap_transport_http: set header Host: www.favista.com
+2014-02-22 14:14:04.481284 soap_transport_http: connect connection_timeout 0, response_timeout 30, scheme http, host www.favista.com, port 80
+2014-02-22 14:14:04.481436 soap_transport_http: calling fsockopen with host www.favista.com connection_timeout 0
+2014-02-22 14:14:04.670966 soap_transport_http: set response timeout to 30
+2014-02-22 14:14:04.671108 soap_transport_http: socket connected
+2014-02-22 14:14:04.671201 soap_transport_http: HTTP request: GET /favista/service/v4/soap.php?wsdl HTTP/1.1
+2014-02-22 14:14:04.671256 soap_transport_http: HTTP header: Host: www.favista.com
+2014-02-22 14:14:04.671322 soap_transport_http: HTTP header: User-Agent: NuSOAP/0.9.5 (1.123)
+2014-02-22 14:14:04.671370 soap_transport_http: HTTP header: Accept-Encoding: gzip, deflate
+2014-02-22 14:14:04.671418 soap_transport_http: HTTP header: Connection: close
+2014-02-22 14:14:04.671638 soap_transport_http: wrote data to socket, length = 158
+2014-02-22 14:14:05.737407 soap_transport_http: read line of 24 bytes: HTTP/1.1 404 Not Found
+2014-02-22 14:14:05.737537 soap_transport_http: read line of 32 bytes: Server: Apache/2.2.22 (Ubuntu)
+2014-02-22 14:14:05.737615 soap_transport_http: read line of 37 bytes: X-Powered-By: PHP/5.3.10-1ubuntu3.9
+2014-02-22 14:14:05.737690 soap_transport_http: read line of 57 bytes: P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+2014-02-22 14:14:05.737762 soap_transport_http: read line of 23 bytes: Vary: Accept-Encoding
+2014-02-22 14:14:05.737836 soap_transport_http: read line of 24 bytes: Content-Encoding: gzip
+2014-02-22 14:14:05.737908 soap_transport_http: read line of 25 bytes: Content-Type: text/html
+2014-02-22 14:14:05.737980 soap_transport_http: read line of 32 bytes: X-Forwarded-For: 115.254.78.74
+2014-02-22 14:14:05.738053 soap_transport_http: read line of 52 bytes: Cache-Control: private, max-age=0, must-revalidate
+2014-02-22 14:14:05.738127 soap_transport_http: read line of 18 bytes: Pragma: no-cache
+2014-02-22 14:14:05.738200 soap_transport_http: read line of 39 bytes: X-Cacheable: Remove cookies and cache
+2014-02-22 14:14:05.738274 soap_transport_http: read line of 23 bytes: Content-Length: 13678
+2014-02-22 14:14:05.738347 soap_transport_http: read line of 22 bytes: Accept-Ranges: bytes
+2014-02-22 14:14:05.738420 soap_transport_http: read line of 37 bytes: Date: Sat, 22 Feb 2014 14:15:04 GMT
+2014-02-22 14:14:05.738514 soap_transport_http: read line of 23 bytes: X-Varnish: 2140593301
+2014-02-22 14:14:05.738589 soap_transport_http: read line of 8 bytes: Age: 0
+2014-02-22 14:14:05.738662 soap_transport_http: read line of 18 bytes: Via: 1.1 varnish
+2014-02-22 14:14:05.738735 soap_transport_http: read line of 19 bytes: Connection: close
+2014-02-22 14:14:05.738808 soap_transport_http: read line of 26 bytes: X-Cache-Backend: default
+2014-02-22 14:14:05.738882 soap_transport_http: read line of 15 bytes: X-Cache: MISS
+2014-02-22 14:14:05.738956 soap_transport_http: read line of 2 bytes: 
+2014-02-22 14:14:05.739034 soap_transport_http: found end of headers after length 556
+2014-02-22 14:14:05.739434 soap_transport_http: want to read content of length 13678
+2014-02-22 14:14:05.744435 soap_transport_http: read buffer of 2340 bytes
+2014-02-22 14:14:05.744599 soap_transport_http: read buffer of 1448 bytes
+2014-02-22 14:14:05.745794 soap_transport_http: read buffer of 1448 bytes
+2014-02-22 14:14:05.745999 soap_transport_http: read buffer of 1448 bytes
+2014-02-22 14:14:05.746722 soap_transport_http: read buffer of 1448 bytes
+2014-02-22 14:14:05.746886 soap_transport_http: read buffer of 1448 bytes
+2014-02-22 14:14:05.748275 soap_transport_http: read buffer of 1448 bytes
+2014-02-22 14:14:05.748620 soap_transport_http: read buffer of 1448 bytes
+2014-02-22 14:14:05.749231 soap_transport_http: read buffer of 1202 bytes
+2014-02-22 14:14:05.749347 soap_transport_http: read to EOF
+2014-02-22 14:14:05.749411 soap_transport_http: read body of length 13678
+2014-02-22 14:14:05.749497 soap_transport_http: received a total of 14234 bytes of data from server
+2014-02-22 14:14:05.749751 soap_transport_http: closed socket
+2014-02-22 14:14:05.749861 soap_transport_http: end of send()
+2014-02-22 14:14:05.749947 wsdl: Getting http://favista.com/favista/service/v4/soap.php?wsdl - HTTP ERROR: Unsupported HTTP response status 404 Not Found (soapclient->response has contents of the response)
+2014-02-22 14:14:05.750124 nusoap_client: checkWSDL
+2014-02-22 14:14:05.750207 nusoap_client: got wsdl error: Getting http://favista.com/favista/service/v4/soap.php?wsdl - HTTP ERROR: Unsupported HTTP response status 404 Not Found (soapclient->response has contents of the response)
+ 
